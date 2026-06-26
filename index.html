@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroMints — Whitening Mints for a Brighter Smile</title>
+  <meta name="description" content="MicroMints are sugar-free whitening mints powered by hydroxyapatite. Fresher breath and a brighter smile — one tiny mint at a time.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(){var t=localStorage.getItem('mm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow reveal">✦ Powered by hydroxyapatite</span>
+        <h1 class="reveal d1">A brighter smile in <span class="hl">every mint.</span></h1>
+        <p class="reveal d2">MicroMints gently lift surface stains and leave breath box-fresh — sugar-free, enamel-safe, and small enough to take anywhere.</p>
+        <div class="hero-cta reveal d3">
+          <a href="#shop" class="btn btn-lg">Shop the mints</a>
+          <a href="#science" class="btn btn-ghost btn-lg">How it works</a>
+        </div>
+        <div class="hero-trust reveal d4">
+          <div class="ht"><b data-count="120" data-suffix="k+">0</b><span>Smiles brightened</span></div>
+          <div class="ht"><b data-count="4.9">0</b><span>Average rating</span></div>
+          <div class="ht"><b>0%</b><span>Sugar &amp; peroxide</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal d2" data-tilt>
+        <div class="hero-blob"></div>
+        <div id="heroTin" class="hero-tin"></div>
+        <div class="hero-pill p1" id="pill1"></div>
+        <div class="hero-pill p2" id="pill2"></div>
+        <div class="hero-pill p3" id="pill3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="section-sm" style="padding-block:18px">
+    <div class="container marquee">
+      <div class="marquee-track" id="marquee"></div>
+    </div>
+  </div>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section" id="shop" style="padding-top:30px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Shop the mints</span>
+        <h2>Find your daily mint</h2>
+        <p>Every tin is sugar-free, enamel-safe, and powered by hydroxyapatite. Free shipping over $35.</p>
+      </div>
+      <div class="grid cols-3" id="shopGrid"></div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="section-sm" style="background:var(--bg-elev);border-block:1px solid var(--border)">
+    <div class="container trust-bar">
+      <span class="ti"><i data-icon="truck"></i> Free shipping over $35</span>
+      <span class="ti"><i data-icon="recycle"></i> 30-day money back</span>
+      <span class="ti"><i data-icon="shield"></i> Enamel-safe formula</span>
+      <span class="ti"><i data-icon="leaf"></i> Vegan &amp; cruelty-free</span>
+    </div>
+  </section>
+
+  <!-- ============ THE SCIENCE ============ -->
+  <section class="section" id="science">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-icon="flask"></i> The science</span>
+        <h2>Whitening, the gentle way</h2>
+        <p>No peroxide. No sensitivity. Just the same mineral your enamel is made of, doing what it does best.</p>
+      </div>
+
+      <div class="split">
+        <div class="split-media glow reveal" id="sciTin"></div>
+        <div class="reveal d1">
+          <span class="eyebrow">The hero ingredient</span>
+          <h2 class="mt-2" style="font-size:clamp(1.5rem,3vw,2rem)">Meet nano-hydroxyapatite</h2>
+          <p>Roughly 97% of your tooth enamel is hydroxyapatite — a naturally occurring calcium mineral. Over time, acids and stains create micro-roughness on the surface that traps color from coffee, tea, and wine.</p>
+          <p>Nano-hydroxyapatite is a microscopic version that fills those tiny gaps, smooths the surface, and reflects light — so teeth look whiter while enamel is strengthened, not stripped.</p>
+          <ul class="check-list">
+            <li><i data-icon="check"></i><span>Remineralizes &amp; smooths enamel</span></li>
+            <li><i data-icon="check"></i><span>Reflects light for a brighter look</span></li>
+            <li><i data-icon="check"></i><span>No peroxide — so no sensitivity</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works steps -->
+  <section class="section" style="background:var(--bg-elev);border-block:1px solid var(--border)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Mint to smile</span>
+        <h2>What happens when you pop a MicroMint</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="step glow card reveal"><div class="num">1</div><h3>Dissolve</h3><p>As the mint melts, hydroxyapatite and xylitol spread across your teeth and saliva.</p></div>
+        <div class="step glow card reveal d1"><div class="num">2</div><h3>Fill &amp; polish</h3><p>Microscopic particles settle into surface micro-gaps, lifting stains and smoothing enamel.</p></div>
+        <div class="step glow card reveal d2"><div class="num">3</div><h3>Brighten</h3><p>A smoother surface reflects more light — your smile looks cleaner and visibly brighter over time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-icon="mail"></i> Get in touch</span>
+        <h2>Say hello</h2>
+        <p>Questions, wholesale, press, or just want to share your smile? We’d love to hear from you.</p>
+      </div>
+
+      <div class="split" style="align-items:start">
+        <!-- Form -->
+        <div class="card reveal" style="padding:30px">
+          <h3 class="mb-3">Send us a message</h3>
+          <form id="contactForm" novalidate>
+            <div class="row-2">
+              <div class="field"><label for="cf-name">Name</label><input class="input" id="cf-name" required placeholder="Your name"></div>
+              <div class="field"><label for="cf-email">Email</label><input class="input" id="cf-email" type="email" required placeholder="you@email.com"></div>
+            </div>
+            <div class="field">
+              <label for="cf-topic">Topic</label>
+              <select class="input" id="cf-topic">
+                <option>General question</option><option>Order help</option>
+                <option>Wholesale / retail</option><option>Press</option><option>Something else</option>
+              </select>
+            </div>
+            <div class="field"><label for="cf-msg">Message</label><textarea class="input" id="cf-msg" required placeholder="How can we help?"></textarea></div>
+            <button class="btn btn-lg btn-block" type="submit">Send message <i data-icon="arrow"></i></button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="reveal d1">
+          <span class="eyebrow">Reach us</span>
+          <h2 class="mt-2 mb-3" style="font-size:clamp(1.5rem,3vw,2rem)">We’re quick to reply</h2>
+          <div class="grid" style="gap:16px">
+            <div class="card card-hover glow flex gap-2 items-center">
+              <div class="ficon" style="margin:0"><i data-icon="mail"></i></div>
+              <div><b>Email</b><br><span class="muted">hello@micromints.co</span></div>
+            </div>
+            <div class="card card-hover glow flex gap-2 items-center">
+              <div class="ficon" style="margin:0"><i data-icon="phone"></i></div>
+              <div><b>Phone</b><br><span class="muted">+1 (800) 555-MINT · Mon–Fri 9–5 PT</span></div>
+            </div>
+            <div class="card card-hover glow flex gap-2 items-center">
+              <div class="ficon" style="margin:0"><i data-icon="pin"></i></div>
+              <div><b>HQ</b><br><span class="muted">221 Fresh Ave, Portland, OR 97201</span></div>
+            </div>
+            <div class="card card-hover glow flex gap-2 items-center">
+              <div class="ficon" style="margin:0"><i data-icon="clock"></i></div>
+              <div><b>Response time</b><br><span class="muted">Usually within 1 business day</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

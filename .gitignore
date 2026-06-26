@@ -1,0 +1,10 @@
+# Local tooling / preview config
+.claude/
+
+# Original source asset (the logo is already in assets/logo.png)
+ChatGPT Image*.png
+
+# OS / editor junk
+Thumbs.db
+.DS_Store
+*.log
