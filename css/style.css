@@ -285,10 +285,14 @@ h3 { font-size: 1.25rem; }
 .feature p { color: var(--text-soft); font-size: .98rem; }
 
 /* ---------- Product card ---------- */
-.product-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.product-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); }
 .product-media {
   position: relative; aspect-ratio: 1/1; display: grid; place-items: center;
   overflow: hidden;
+  /* Soft mint-tinted backdrop so the tin doesn't blend into a white card */
+  background:
+    radial-gradient(120% 100% at 50% 0%, color-mix(in srgb, var(--mint) 14%, var(--bg-sunk)), var(--bg-sunk));
+  border-bottom: 1px solid var(--border);
 }
 .product-media .tin { width: 64%; transition: transform var(--t-slow) var(--ease-out); }
 .product-card:hover .product-media .tin { transform: translateY(-6px) scale(1.05) rotate(2deg); }
