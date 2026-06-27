@@ -289,10 +289,6 @@ h3 { font-size: 1.25rem; }
 .product-media {
   position: relative; aspect-ratio: 1/1; display: grid; place-items: center;
   overflow: hidden;
-  /* Soft mint-tinted backdrop so the tin doesn't blend into a white card */
-  background:
-    radial-gradient(120% 100% at 50% 0%, color-mix(in srgb, var(--mint) 14%, var(--bg-sunk)), var(--bg-sunk));
-  border-bottom: 1px solid var(--border);
 }
 .product-media .tin { width: 64%; transition: transform var(--t-slow) var(--ease-out); }
 .product-card:hover .product-media .tin { transform: translateY(-6px) scale(1.05) rotate(2deg); }
@@ -317,7 +313,7 @@ h3 { font-size: 1.25rem; }
 .rating-row { display: flex; align-items: center; gap: 7px; font-size: .85rem; color: var(--text-faint); }
 
 /* ---------- Tin graphic ---------- */
-.tin { filter: drop-shadow(0 14px 22px rgba(20,32,26,.16)); }
+.tin { filter: drop-shadow(0 12px 20px rgba(20,32,26,.22)); }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; padding-block: clamp(48px, 7vw, 96px); }

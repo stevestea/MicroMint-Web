@@ -32,13 +32,13 @@ function tinSVG(color = '#2ec98d', accent = '#1b8a60') {
       </linearGradient>
     </defs>
     <!-- body -->
-    <rect x="34" y="46" width="132" height="150" rx="26" fill="url(#g-${color.replace('#','')})"/>
+    <rect x="34" y="46" width="132" height="150" rx="26" fill="url(#g-${color.replace('#','')})" stroke="rgba(15,23,20,.10)" stroke-width="1.5"/>
     <rect x="34" y="46" width="132" height="150" rx="26" fill="#ffffff" opacity=".06"/>
     <!-- lid -->
-    <rect x="28" y="30" width="144" height="42" rx="20" fill="#ffffff" opacity=".95"/>
+    <rect x="28" y="30" width="144" height="42" rx="20" fill="#f4f8f6" stroke="rgba(15,23,20,.12)" stroke-width="1.5"/>
     <rect x="28" y="30" width="144" height="42" rx="20" fill="${color}" opacity=".12"/>
     <!-- label band -->
-    <rect x="46" y="104" width="108" height="58" rx="14" fill="#ffffff" opacity=".92"/>
+    <rect x="46" y="104" width="108" height="58" rx="14" fill="#f4f8f6" stroke="rgba(15,23,20,.09)" stroke-width="1.5"/>
     <!-- mark on label -->
     <g transform="translate(100 133) scale(.34)">
       ${(() => { const p=[]; for(let i=0;i<8;i++){const a=i*45*Math.PI/180,cx=Math.cos(a)*31,cy=Math.sin(a)*31,rot=i*45+90;p.push(`<ellipse cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" rx="4.6" ry="9.4" transform="rotate(${rot} ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="${color}" opacity=".55"/>`);} return p.join(''); })()}
